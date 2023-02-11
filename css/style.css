@@ -1,0 +1,420 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #24292e;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+
+
+
+
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0 4%;
+  text-decoration: none;
+  color:inherit;
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+    opacity: 0.7;
+}
+
+#header li img.icon {
+  width: 20px;
+}
+
+header.scrolled {
+background-color: rgba(255,255,255,.95);
+box-shadow: 0 0 4px rgba(0,0,0,.3);
+
+}
+  
+  /*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+  padding-top: 100px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+
+.wrapper {
+  padding-top: 100px;
+}
+/*-------------------------------------------
+About
+-------------------------------------------*/
+
+#about ul {
+  margin-bottom: 30px;
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align:justify;
+}
+#about dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#about dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#about dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin:0 auto 50px;
+  max-width: 60%;
+}
+
+#works li {
+  width: 40%;
+  /* margin-bottom: 23px; */
+}
+
+#works li:hover {
+  opacity: .5;
+}
+#works p {
+  text-align: center;
+}
+#works img {
+  box-shadow: 1px 1px 4px grey;
+}
+
+/*-------------------------------------------
+News
+-------------------------------------------*/
+#news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#news dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#news dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#navArea {
+  display: none;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+
+  /* hambarger */
+  #navArea {
+    display: inline;
+  }
+nav {
+  display: block;
+  position: fixed;
+  background-color: #ffffff;
+  width: 220px;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  transition: all 0.5s;
+  z-index: 3;
+  opacity: 0;
+}
+
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+
+nav .inner {
+  padding: 25px;
+}
+
+nav .inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav .inner ul li {
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1rem;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+nav .inner ul li a:hover {
+  background: #e4e4e4;
+}
+
+.toggle-btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.toggle-btn span {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+
+.toggle-btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle-btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle-btn span:nth-child(3) {
+  bottom: 4px;
+}
+
+.open .toggle-btn span {
+  background-color: #fff;
+}
+
+.open .toggle-btn span:nth-child(1) {
+  transform: translateY(10px) rotate(-315deg);
+}
+
+.open .toggle-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.open .toggle-btn span:nth-child(3) {
+  transform: translateY(-10px) rotate(315deg);
+}
+
+#mask {
+  display: none;
+  transition: all 0.5s;
+}
+
+.open #mask {
+  display: block;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.8;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    flex-direction: column;
+    height: 100px;
+  }
+
+  #header h1 {
+   margin-top: 50px;
+
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #works ul {
+    flex-direction: column;
+  }
+  #works li {
+    width: 100%;
+  }
+
+  /*-------------------------------------------
+  News
+  -------------------------------------------*/
+  #news dl {
+    flex-direction: column;
+  }
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  #contact dl {
+    flex-direction: column;
+  }
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
+}

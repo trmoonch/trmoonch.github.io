@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>My Work - Portfolio</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+   <div id="navArea">
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
+    </div>
+  <header id="header" class="scrolled">
+    <h1 class="site-title">My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="mainvisual">
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+        <img src="img/Port-Hero .jpeg" alt="テキストテキストテキスト">
+      </picture>
+    </div>
+
+    <section id="about" class="wrapper">
+      <h2 class="sec-title">About</h2>
+      <dl>
+        <dt>2011.04.01</dt>
+        <dd>企業向けOA機器の卸販売企業に新卒入社<br>回線、NW機器の販売営業を経験</dd>
+        <dt>2013.09.01</dt>
+        <dd>同企業にてエンジニア部門に異動<br>業務用ルーター、ファイルサーバー、複合機の構築、設置、保守を経験</dd>
+        <dt>2022.04.01</dt>
+        <dd>現在の飲食事業を展開する企業へ転職</dd>
+        <dt>2022.11.01</dt>
+        <dd>ドットインストールにてHTML/cssの勉強開始</dd>
+        <dt>2023.2.01</dt>
+        <dd>ドットインストールレッスン<br>総完了数:468 視聴時間:18:59:15 学習日数:70日</dd>
+      </dl>
+     
+    </section>
+
+    <section id="works" class="wrapper">
+      <h2 class="sec-title">Works</h2>
+      <section class="animate">
+      <ul>
+        <li>
+          <a href="Myomikuji/index.html" target="_blank"><img src="img/omikuji.png" alt="テキストテキストテキスト"></a>
+          <p>jsを利用して<br>おみくじアプリ作成</p>
+        </li>
+        <li>
+          <a href="MyHomepage/index3.html" target="_blank"><img src="img/Myhomepage.png" alt="テキストテキストテキスト"></a>
+          <p>飲食店のHP<br>作成中です</p>
+        </li>
+                
+      </ul>
+    </section>
+    </section>
+
+   
+    <section id="contact" class="wrapper">
+      <h2 class="sec-title">Contact</h2>
+      <form action="#" method="post">
+        <dl>
+          <dt><label for="name">NAME</label></dt>
+          <dd><input type="text" id="name" name="your-name"></dd>
+          <dt><label for="email">E-mail</label></dt>
+          <dd><input type="email" id="email" name="your-email"></dd>
+          <dt><label for="message">MESSAGE</label></dt>
+          <dd><textarea id="message" name="your-message"></textarea></dd>
+        </dl>
+        <div class="button"><input type="submit" value="送信"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2023 My Portfolio</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

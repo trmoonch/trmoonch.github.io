@@ -1,0 +1,79 @@
+/* header */
+header {
+  
+  background: rgba(255, 255,255, 0.5);
+  height: 250px;
+  /* margin-bottom: 20px; */
+  }
+div.kuji {
+  text-align: center;
+  border-radius: 50% ;
+  margin: 0;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  0% {transform: none;}
+  40% {transform:rotate(360deg);}
+  100% {transform:rotate(720deg);}
+}
+/* body */
+
+body {
+  margin: 0;
+  background-image: url(../img/backg.jpg);
+}
+
+#touch {
+  text-align: center;
+  font-weight: bold;
+}
+
+#btn {
+ width: 300px;
+ height: 300px;
+ background: #ef454a;
+ border-radius: 50% ;
+ margin: 30px auto;
+text-align: center;
+line-height: 300px;
+color:#efefef ;
+font-weight: bold;
+font-size: 42px;
+cursor: pointer;
+box-shadow:  0 10px 0 #d1483e;
+user-select: none;
+}
+#btn:hover{
+ opacity: 0.8;
+}
+#btn:active {
+  box-shadow:  0 10px 0 #d1483e;
+  margin-top: 35px;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+ .desc {
+  align-self: flex-end;
+  flex-grow: 1;
+}
+
+/* .btn2 {
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 100%;
+  user-select: none;
+  
+} */
